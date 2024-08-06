@@ -142,7 +142,9 @@ nav{
     background:violet;
     border-radius: 50%;
 }
-
+.nav-link:active{
+    color: violet;
+}
 
 /* ----- WRAPPER DESIGN ----- */
 .wrapper{
