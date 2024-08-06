@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- --------- FAVICON ---------- -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+</head>
+<body>
+    
+    
+   <div class="container">
+    <!-- --------------- HEADER --------------- -->
+    <script src="./script.js"></script>
+      <nav id="header">
+        <div class="nav-logo">
+            <p class="nav-name">Mike Gihango</p>
+            <!-- <span>.</span> -->
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="#home" class="nav-link active-link">Home</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#about" class="nav-link">About</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#services" class="nav-link">Services</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#projects" class="nav-link">Portfolio</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <div class="circle"></div>
+                </li>
+
+
+            </ul>
+        </div>
+        <div class="nav-button">
+            <button class="btn"><a target="_blank" href="https://drive.google.com/file/d/1iIeksdiAcGb2uVT3df-3MUd7cEg0WrDw/view?usp=sharing">Download CV</a> <i class="uil uil-file-alt"></i></button>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+      
+
+
+    <!-- -------------- MAIN ---------------- -->
+    
+    <main class="wrapper">
+       <!-- -------------- FEATURED BOX ---------------- -->
+       <section class="featured-box" id="home" >
+          <div class="featured-text">
+            <div class="featured-text-card">
+                <span>Mike</span>
+            </div>
+            <div class="featured-name">
+                <p>I'm <span class="typedText"></span>Videographer Architectural and Graphic Designer!</p>
+            </div>
+            <div class="featured-text-info">
+                <p>capture special moments through video,showcase the beauty of buildings, and create unique visual identities with logos,
+                business cards, and social media graphics. My goal is to bring ideas to life and create memorable visual experiences...
+                </p>
+            </div>
+            <div class="featured-text-btn">
+                <button class="btn blue-btn" onclick="window.location.href='#contact';">Hire Me</button>
+                <button class="btn"><a target="_blank" href="https://drive.google.com/file/d/1iIeksdiAcGb2uVT3df-3MUd7cEg0WrDw/view?usp=sharing">Download CV</a> <i class="uil uil-file-alt"></i></button>
+            </div>
+            <div class="social_icons">
+                <div class="icon"><a target="_blank" href="https://www.instagram.com/mike_gihango/"><i class="uil uil-instagram"></i></a></div>
+            <div class="icon"><a target="_blank" href="https://www.linkedin.com/in/mike-jolivet-gihango-877146241/"><i class="uil uil-linkedin-alt"></i></a></div>
+            <div class="icon">
+                <a target="_blank" href="https://twitter.com/yourusername">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            </div>
+          </div>
+          <div class="featured-image">
+            <div class="image">
+                <img src="./images/DSC_9257-removebg-preview.png" alt="avatar">
+            </div>
+          </div>
+          <div class="scroll-icon-box">
+            <a href="#about" class="scroll-btn">
+                <i class="uil uil-mouse-alt"></i>
+                <p>Scroll Down</p>
+            </a>
+          </div>
+
+       </section>
+       <!-- -------------- ABOUT BOX ---------------- -->
+       <section class="section" id="about">
+          <div class="top-header">
+            <h1>About Me</h1>
+          </div>
+          <div class="row">
+            <div class="col">
+                <div class="about-info">
+                    <h3>My introduction</h3>
+                    <p>I am a creative visionary who seamlessly blends architecture, videography,
+                        and graphic design. With a keen eye for aesthetics and a passion for storytelling, 
+                        I transform spaces into captivating visual experiences. As an architect, I understand the 
+                        intricacies of design and function. As a videographer, I have the skill to capture the essence of
+                         a space and translate it into dynamic, cinematic narratives. And as a graphic designer, I bring these 
+                         elements together to create visually stunning and impactful content..
+                    </p>
+                    <div class="about-btn">
+                        <button onclick="window.location.href='about.html';">Read More</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="skills-container">
+                <div class="skills-box">
+                    <h3>Pro Skills</h3>
+                    <div class="skill">
+                        <span>Illustrator</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>InDesign</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Premiere Pro</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Microsoft Office</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          
+       </section>
+
+
+
+        <!-- -----------------------------SERVICES  SECTION ---------------------- -->
+
+    <section id="services" class="services">
+        <video autoplay muted loop id="background-video">
+            <source src="videos/service.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h2>My Services</h2>
+        <div class="service-container">
+            <div class="service">
+                <h3>Videographer</h3>
+                <p>As a videographer, I offer a range of services to capture your special
+                    moments and create engaging videos. I can film events like weddings and
+                    parties, produce promotional videos for businesses, and create music videos for artists.
+                    I also make documentary and short films, real estate videos, and social media content.
+                    My services include video editing, color grading, and adding sound effects. Whether you need
+                    a professional video for your business or a personal project, I'm here to help. Contact me to
+                    learn more and book my videography services..</p>
+            </div>
+            <div class="service">
+                <h3>Graphic Design</h3>
+                <p>As a graphic designer, I offer a variety of services to help bring your ideas to life.
+                    I create logos, business cards, and other branding materials to give your business
+                    a unique identity. I design posters, flyers, and brochures to promote your events
+                    and products. Additionally, I can design social media graphics to enhance your online presence.
+                    Whether you need a new website layout or custom illustrations, I'm here to provide professional
+                    and creative solutions. Contact me to discuss your project and see how I can help with your graphic design needs.</p>
+            </div>
+            <div class="service">
+                <h3>Architecture</h3>
+                <p>I transform architectural designs into captivating visual stories.
+                    With a keen eye for detail and a passion for storytelling,
+                    I create high-quality videos that showcase the unique character
+                    and beauty of buildings. From stunning aerial shots to intimate
+                    interior explorations, I bring architectural spaces to life, engaging audiences and
+                    leaving a lasting impression.</p>
+            </div>
+        </div>
+    </section>
+    
+
+       <!-- -------------- PROJECT BOX ---------------- -->
+
+       <section class="section" id="projects">
+          <div class="top-header">
+              <h1>Projects</h1>
+          </div>
+          <div class="project-container">
+            <div class="project-box">
+                <video controls>
+                    <source src="videos/Wedding Teaser.mp4" type="video/mp4">
+                </video>
+                <h3>Wedding</h3>
+                <!-- <p>weddings.</p> -->
+            </div>
+            <div class="project-box">
+                <video controls>
+                    <source src="videos/y2mate.com - Khire  Tona Official video_1080p.mp4" type="video/mp4">
+                  
+                </video>
+                <h3>Film Making</h3>
+                <!-- <p>Film make specialist</p> -->
+            </div>
+            <div class="project-box">
+                <video controls>
+                    <source src="videos/advertzment.mp4" type="video/mp4">
+                    
+                </video>
+
+                <h3>Advertisement</h3>
+                <!-- <p> specialist advertizment videos .</p> -->
+            </div>
+            <div class="project-box">
+                <video controls>
+                    <source src="videos/photography.mp4" type="video/mp4">
+                   
+                </video>
+                <h3>Photshoot</h3>
+                <!-- <p>Photshoot specialist.</p> -->
+            </div>
+
+            <div class="project-box">
+                <video controls>
+                    <source src="videos/architecture.mp4" type="video/mp4">
+                 
+                </video>
+                <h3>Architecture</h3>
+                <!-- <p>Architectural.</p> -->
+            </div>
+
+            <div class="project-box">
+                <video controls>
+                    <source src="videos/graphic design.mp4" type="video/mp4">
+                    
+                </video>
+                <h3>Graphic designing </h3>
+                <!-- <p>graphics</p> -->
+
+          </div>
+       </section>
+
+       <!-- -------------- CONTACT BOX ---------------- -->
+
+       <section class="section" id="contact">
+          <div class="top-header">
+            <h1>Get in touch</h1>
+            <span>Do you have a project in your mind, contact me here</span>
+          </div>
+          <div class="row">
+             <div class="col">
+                <div class="contact-info">
+                    <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                    <p><i class="uil uil-envelope"></i>  Email: mikejolivet85@gmail.com</p>
+                    <p><i class="uil uil-phone"></i> Tel: +250 7812 242 053</p>
+                </div>
+             </div>
+             <div class="col">
+                <div class="form-control">
+                    <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+                        <div class="form-inputs">
+                            <input type="hidden" name="access_key" value="093bddb2-4819-426a-b471-765c779df9ac">
+                            <input type="text" class="input-field" name="name" placeholder="Name">
+                            <input type="email" class="input-field" name="email" placeholder="Email">
+                        </div>
+                        <div class="text-area">
+                            <textarea name="message" placeholder="Message"></textarea>
+                        </div>
+                        <div class="form-button">
+                            <button type="submit" id="sendButton" class="btn">Send <i class="uil uil-message"></i></button>
+                        </div>
+                    </form>
+                    
+                </div>
+             </div>
+          </div>
+       </section>
+     
+
+    </main>
+
+
+    <!-- --------------- FOOTER --------------- -->
+    <footer>
+        <div class="top-footer">
+            <p>MIKE GIHANGO</p>
+        </div>
+        <div class="middle-footer">
+            <ul class="footer-menu">
+                <li class="footer_menu_list">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#about">About</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#services">Services</a>
+                </li>
+
+                <li class="footer_menu_list">
+                    <a href="#projects">Projects</a>
+                </li>
+               
+                <li class="footer_menu_list">
+                    <a href="#contact">Contact</a>
+                </li>
+
+                
+            </ul>
+        </div>
+        <div class="footer-social-icons">
+            <div class="icon"><a target="_blank" href="https://www.instagram.com/mike_gihango/"><i class="uil uil-instagram"></i></a></div>
+            <div class="icon"><a target="_blank" href="https://www.linkedin.com/in/mike-jolivet-gihango-877146241/"><i class="uil uil-linkedin-alt"></i></a></div>
+            <div class="icon">
+                <a target="_blank" href="https://twitter.com/yourusername">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <p>Copyright &copy; <a href="#home" style="text-decoration: none;">mike_gihango</a> - All rights reserved</p>
+        </div>
+    </footer>
+
+    </div>
+
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+       <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ----- MAIN JS -----
+    <script src="assets/js/main.js"></script> -->
+</div>
+</body>
+</html>
