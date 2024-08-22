@@ -9,8 +9,6 @@
     --primary--color:#01050D;
     --nav--color:#282828;
 }
-
-
 /* ----- BASE ----- */
 *{
     margin: 0;
@@ -18,7 +16,10 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+main.wrapper{
+    background-color: #01050d;
 
+}
 /* ----- SMOOTH SCROLL ----- */
 html{
     scroll-behavior: smooth;
@@ -58,21 +59,22 @@ html{
 }
 .btn:hover{
     background: var(--primary--color);
+    color: var(--color-white);
 }
 
 /* ----- GLOBAL ICONS DESIGN ----- */
 i{
     font-size: 16px;
-   
-
 }
 
 /* ------- BASE -------- */
-
+body{
+    background: var(--primary--color);
+}
 .container{
     width: 100%;
-    height: 100vh;
     color: var(--text--color);
+    height: 100vh;
     position: relative;
 }
 
@@ -142,9 +144,7 @@ nav{
     background:violet;
     border-radius: 50%;
 }
-.nav-link:active{
-    color: violet;
-}
+
 
 /* ----- WRAPPER DESIGN ----- */
 .wrapper{
@@ -156,7 +156,6 @@ nav{
 .featured-box{
     position: relative;
     display: flex;
-    background-color: var(--primary--color);
     height: 100vh;
     min-height: 700px;
 }
@@ -170,7 +169,7 @@ nav{
     min-height: 80vh;
     flex-direction: column;
     width: 50%;
-    padding-left: 112px;
+    padding-left: 20px;
 }
 .featured-text-card span{
     background: var(--third-color);
@@ -180,7 +179,7 @@ nav{
     border-radius: 5px;
 }
 .featured-name{
-    font-size: 30px;
+    font-size: 50px;
     font-weight: 600;
     color: var(--button--color);
     margin-block: 20px;
@@ -201,15 +200,16 @@ nav{
 .featured-text-btn>.blue-btn{
     background: var(--button--color);
     color: var(--color-white);
+
 }
 .featured-text-btn>.blue-btn:hover{
     background: var(--first-color-hover);
+
 }
 .social_icons{
     display: flex;
     margin-top: 5em;
     gap: 30px;
-    
 }
 .icon{
     display: flex;
@@ -222,6 +222,7 @@ nav{
     box-shadow: 0px 2px 5px 0px rgba(255, 255, 255, 0.944);
     cursor: pointer;
 }
+
 a{
     text-decoration: none;
 }
@@ -256,46 +257,37 @@ a{
         border-radius: 45% 55% 45% 55%;
     }
 }
-.scroll-btn {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%); 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 50px;
-    gap: 5px;
-    text-decoration: none;
-    color: var(--text-color-second);
-    background: var(--button--color);
-    border-radius: 30px;
-    box-shadow: 0 2px 5px 0 rgba(8, 216, 216, 0.25);
- }
- 
- .scroll-btn i {
-     font-size: 20px;
-     background-color: var(--button--color);
- }
- 
- /* Media query to hide the scroll button on small screens */
- @media (max-width: 768px) {
-    .scroll-btn {
-        display: none;
-    }
- }
- 
+.scroll-btn{
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   translate: -50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 150px;
+   height: 50px;
+   gap: 5px;
+   text-decoration: none;
+   color: var(--text-color-second);
+   background: var(--button--color);
+   border-radius: 30px;
+   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+}
+.scroll-btn i{
+    font-size: 20px;
+    background-color: var(--button--color);
+}
 
 /* ----- MAIN BOX ----- */
 .section{
-    padding-block: 3em;
+    padding-block: 5em;
 }
 .row{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
-    gap: 40px;
+    gap: 50px;
 }
 .col{
     display: flex;
@@ -315,14 +307,14 @@ a{
 .top-header span{
     color: var(--text--color);
 }
-h3 {
+h3{
     font-size: 20px;
     font-weight: 600;
     color: var(--button--color);
-    margin-top: 36px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
+/* ----- ABOUT / SKILLS BOX ----- */
 /* ----- ABOUT INFO ----- */
 #about{
     background-color: #1F232E;
@@ -423,7 +415,6 @@ h3 {
     color:var(--button--color);
 }
 
-/* .service */
 /* General styles for the services section */
 #services {
     position: relative;
@@ -440,7 +431,7 @@ h3 {
     height: 100%;
     object-fit: cover;
     z-index: -1;
-    opacity: 0.5; /* Adjust opacity to your preference */
+    opacity: 0.5; 
 }
 
 #services h2 {
@@ -458,7 +449,7 @@ h3 {
 }
 
 .service {
-    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    background: rgba(0, 0, 0, 0.7); 
     border-radius: 10px;
     padding: 20px;
     transition: transform 0.3s;
@@ -479,28 +470,13 @@ h3 {
     color: #ddd;
 }
 
-/* Responsive adjustments */
-@media (max-width: 1024px) {
-    .service-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
-    .service-container {
-        grid-template-columns: 1fr;
-    }
-}
-
-
-
 
 /* ----- PROJECTS BOX ----- */
 .project-container {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    /* gap: 20px; */
+    gap: 22px;
     flex-wrap: wrap;
 }
 
@@ -656,17 +632,8 @@ footer{
 }
 
 
-/* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
-@media only screen and (max-width: 1024px){
-    .featured-text{
-        padding: 0;
-    }
-    .image, .image img{
-        width: 320px;
-        height: 320px;
-    }
-}
 
+/* ----- MEDIA QUERIES ----- */
 /* ----- MEDIA QUERY == 900px / RESPONSIVE ----- */
 @media only screen and (max-width: 900px) {
     .nav-button{
@@ -682,7 +649,7 @@ footer{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background: rgba(255, 255, 255, 0.7);
+        /* background: rgba(255, 255, 255, 0.7); */
         backdrop-filter: blur(20px);
         width: 100%;
         min-height: 450px;
@@ -704,7 +671,7 @@ footer{
     }
     .featured-text{
         width: 100%;
-        order: 2;
+        /* order: 2; */
         justify-content: center;
         align-content: flex-start;
         min-height: 60vh;
@@ -713,7 +680,7 @@ footer{
         margin-top: 2em;
     }
     .featured-image{
-        order: 1;
+        /* order: 1; */
         justify-content: center;
         min-height: 150px;
         width: 100%;
@@ -727,7 +694,7 @@ footer{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 50px;
+        /* gap: 50px; */
     }
     .col{
         display: flex;
@@ -762,7 +729,4 @@ footer{
         width: 100%;
     }
 }
-
-
-
 
